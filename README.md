@@ -1,4 +1,4 @@
-# Proyek: Bias
+# Project: Bias
 
 Aplikasi pengenalan angka tulisan tangan yang dibuat dengan bahasa uler 🐍, TensorFlow/Keras, lengkap dengan dokumentasi line-by-line.
 

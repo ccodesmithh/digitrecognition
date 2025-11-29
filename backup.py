@@ -3,7 +3,7 @@
 # THE ACTUAL APP IS IN app.py
 
 print("\n" *50)
-print("Welcome to Pasific Labs | Build ver. 0.3 non-stable | Copyrights Pasific Labs All Rights Reserved")
+print("Welcome to Pasific Labs | Build ver. 0.3 unstable | Copyrights Pasific Labs All Rights Reserved")
 print("="*20)
 
 print("Loading libraries... \n")

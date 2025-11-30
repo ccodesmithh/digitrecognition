@@ -102,14 +102,13 @@ print("Compiling model...\n")
 model.compile(
     optimizer='adam',                           # Optimizer Adam (algoritma untuk mengupdate bobot)
     loss='sparse_categorical_crossentropy',     # Loss function untuk multi-class classification (0-9)
-    dropout=0.2,                                # Dropout untuk mencegah overfitting
     metrics=['accuracy']                        # Mengukur akurasi selama training dan testing
 )
 
 model.summary()  # Tampilkan ringkasan model
 
 print("Training model...\n")
-model.fit(x_train, y_train, epochs=12, validation_data=(x_test, y_test)) # Latih model dengan data training selama 12 epoch
+model.fit(x_train, y_train, epochs=25, validation_data=(x_test, y_test)) # Latih model dengan data training selama 12 epoch
 print("Training completed.\n", "saving model...\n")
 model.save("model_digit.keras")  # Simpan model ke file
 print("Model saved as model_digit.keras\n")

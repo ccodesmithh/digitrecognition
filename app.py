@@ -25,7 +25,7 @@ class DigitRecognizerApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Pasific Labs | Digit Recognizer v0.5")
-        self.root.geometry("800x500")
+        self.root.geometry("800x600")
         self.root.configure(bg="#f0f0f0")
 
         # Style config
@@ -38,6 +38,12 @@ class DigitRecognizerApp:
         # Layout Utama di sini coeg
         self.main_frame = ttk.Frame(root, padding="20")
         self.main_frame.pack(fill=tk.BOTH, expand=True)
+
+        self.top_panel = ttk.Frame(self.main_frame)
+        self.top_panel.pack(side=tk.TOP, fill=tk.X)
+        ttk.Label(self.top_panel, text="Draw a digit using the mouse! Then click Predict.", style='Header.TLabel').pack(pady=(0, 10))
+        ttk.Label(self.top_panel, text="(C) Pasific Labs 2024 All Rights Reserved", font=("Helvetica", 10, "italic")).pack(pady=(0, 1))
+        ttk.Label(self.top_panel, text="Programmed by Yudha Prasetiya / Codesmith @ Pasific Labs", font=("Helvetica", 10, "italic")).pack(pady=(0, 10))
 
         # Panel kiri - Drawing Area
         self.left_panel = ttk.Frame(self.main_frame)

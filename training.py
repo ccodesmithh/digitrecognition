@@ -88,6 +88,8 @@ print("Adding flatten layer...\n")
 # Flatten = mengubah gambar menjadi array
 model.add(layers.Flatten())
 
+model.add(layers.Dropout(0.20))  # Dropout layer untuk mengurangi overfitting
+
 print("Adding fully connected layer...\n")
 # Fully Connected Layer
 # Dense = Fully Connected Layer . Dense(Jumlah Neuron, activation='relu')

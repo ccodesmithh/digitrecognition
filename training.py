@@ -102,6 +102,7 @@ print("Compiling model...\n")
 model.compile(
     optimizer='adam',                           # Optimizer Adam (algoritma untuk mengupdate bobot)
     loss='sparse_categorical_crossentropy',     # Loss function untuk multi-class classification (0-9)
+    dropout=0.2,                                # Dropout untuk mencegah overfitting
     metrics=['accuracy']                        # Mengukur akurasi selama training dan testing
 )
 

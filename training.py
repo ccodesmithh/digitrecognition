@@ -83,6 +83,15 @@ print("Adding second pooling layer...\n")
 # Pooling layer ke 2
 model.add(layers.MaxPooling2D(2,2))
 
+print("Adding third convolutional layer...\n")
+# Convolutional layer ke3 Tidak perlu input shape karena layer sebelumnya sudah ada
+# Butuh lebih bbanyak filter buat nangkep pola yang lebih kompleks
+model.add(layers.Conv2D(128, (3,3), activation='relu'))
+
+print("Adding second pooling layer...\n")
+# Pooling layer ke 3
+model.add(layers.MaxPooling2D(2,2))
+
 print("Adding flatten layer...\n")
 # Flatten
 # Flatten = mengubah gambar menjadi array

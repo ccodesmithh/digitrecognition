@@ -1,5 +1,5 @@
 print("\n" *100)
-print("Welcome to Pasific Labs | Build ver. 0.5 Stable | Copyrights Pasific Labs All Rights Reserved")
+print("Welcome to Pasific Labs | Model ver. 1.4 | Build ver. 0.5 Stable | Copyrights Pasific Labs All Rights Reserved")
 print("="*20)
 
 print("Loading libraries... \n")
@@ -42,7 +42,7 @@ class DigitRecognizerApp:
         self.top_panel = ttk.Frame(self.main_frame)
         self.top_panel.pack(side=tk.TOP, fill=tk.X)
         ttk.Label(self.top_panel, text="Draw a digit using the mouse! Then click Predict.", style='Header.TLabel').pack(pady=(0, 10))
-        ttk.Label(self.top_panel, text="(C) Pasific Labs 2024 All Rights Reserved", font=("Helvetica", 10, "italic")).pack(pady=(0, 1))
+        ttk.Label(self.top_panel, text="(C) Copyrights 2024 Pasific Labs All Rights Reserved", font=("Helvetica", 10, "italic")).pack(pady=(0, 1))
         ttk.Label(self.top_panel, text="Programmed by Yudha Prasetiya / Codesmith @ Pasific Labs", font=("Helvetica", 10, "italic")).pack(pady=(0, 10))
 
         # Panel kiri - Drawing Area
